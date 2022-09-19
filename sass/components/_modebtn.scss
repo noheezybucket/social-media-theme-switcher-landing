@@ -18,7 +18,8 @@
     position: relative;
     padding: 5px 2px;
     cursor: pointer;
-    border: 1px solid $dark-desaturated;
+    // border: 1px solid $dark-desaturated;
+    background-color: white;
 
     span {
       position: absolute;

@@ -10,6 +10,13 @@ const ovcard__numbers = document.querySelectorAll(".ovcard h3");
 const ovcard__title = document.querySelectorAll(".ovcard__title p");
 
 const themeSwitcher = () => {
+  const switchMode = document.getElementById("mode_name").innerText;
+
+  if (switchMode === "Dark Mode") {
+    mode_name.textContent = "Light Mode";
+  } else {
+    mode_name.textContent = "Dark Mode";
+  }
   toggler.classList.toggle("toggle");
 
   mode_name.classList.toggle("desaturated-text");

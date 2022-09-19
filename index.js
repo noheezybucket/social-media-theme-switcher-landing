@@ -8,7 +8,6 @@ const overview__title = document.querySelector(".overview__title");
 const ovcard = document.querySelectorAll(".ovcard");
 const ovcard__numbers = document.querySelectorAll(".ovcard h3");
 const ovcard__title = document.querySelectorAll(".ovcard__title p");
-let mode = "light";
 
 const themeSwitcher = () => {
   toggler.classList.toggle("toggle");
@@ -47,13 +46,5 @@ const themeSwitcher = () => {
 };
 
 toggleBtn.addEventListener("click", () => {
-  if (mode == "light") {
-    mode_name.textContent = "Light Mode";
-    mode = "dark";
-  }
-  if (mode == "dark") {
-    mode_name.textContent = "Dark Mode";
-    mode = "light";
-  }
   themeSwitcher();
 });

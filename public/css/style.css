@@ -20,6 +20,14 @@ main {
   margin: 0 auto;
 }
 
+.green {
+  color: hsl(163deg, 72%, 41%);
+}
+
+.red {
+  color: hsl(356deg, 69%, 56%);
+}
+
 .header__first {
   display: flex;
   align-items: center;
@@ -55,71 +63,6 @@ main {
   font-size: 0.9em;
   font-weight: 600;
   color: hsl(228deg, 34%, 66%);
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px 0;
-  border-radius: 0.5em;
-  background-color: hsl(228deg, 28%, 20%);
-  color: hsl(228deg, 34%, 66%);
-}
-.card--facebook {
-  border-top: 5px solid hsl(208deg, 92%, 53%);
-}
-.card--twitter {
-  border-top: 5px solid hsl(203deg, 89%, 53%);
-}
-.card--instagram {
-  border-top: 5px solid hsl(37deg, 97%, 70%);
-}
-.card--youtube {
-  border-top: 5px solid hsl(348deg, 97%, 39%);
-}
-.card__name {
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  font-size: 0.7em;
-}
-.card__name img {
-  margin-right: 4px;
-}
-.card__followers {
-  text-transform: uppercase;
-  text-align: center;
-  margin: 5px 0 15px 0;
-}
-.card__followers span {
-  font-weight: 700;
-  display: block;
-  font-size: 3em;
-  color: white;
-}
-.card__followers bold {
-  font-weight: normal;
-  letter-spacing: 0.2em;
-  font-size: 0.9em;
-}
-.card__stats {
-  display: flex;
-  align-items: center;
-  font-weight: 600;
-  font-size: 0.7em;
-}
-.card__stats img {
-  margin-right: 4px;
-}
-
-.green {
-  color: hsl(163deg, 72%, 41%);
-}
-
-.red {
-  color: hsl(356deg, 69%, 56%);
 }
 
 .mode {
@@ -181,6 +124,63 @@ main {
   }
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  border-radius: 0.5em;
+  background-color: hsl(228deg, 28%, 20%);
+  color: hsl(228deg, 34%, 66%);
+}
+.card--facebook {
+  border-top: 5px solid hsl(208deg, 92%, 53%);
+}
+.card--twitter {
+  border-top: 5px solid hsl(203deg, 89%, 53%);
+}
+.card--instagram {
+  border-top: 5px solid hsl(37deg, 97%, 70%);
+}
+.card--youtube {
+  border-top: 5px solid hsl(348deg, 97%, 39%);
+}
+.card__name {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.7em;
+}
+.card__name img {
+  margin-right: 4px;
+}
+.card__followers {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 5px 0 15px 0;
+}
+.card__followers span {
+  font-weight: 700;
+  display: block;
+  font-size: 3em;
+  color: white;
+}
+.card__followers bold {
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  font-size: 0.9em;
+}
+.card__stats {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 0.7em;
+}
+.card__stats img {
+  margin-right: 4px;
+}
+
 .ovcard {
   padding: 30px 20px;
   border-radius: 0.5em;
@@ -219,7 +219,7 @@ main {
 }
 
 .card-bg-white {
-  background-color: hsl(227deg, 47%, 96%);
+  background-color: hsl(227deg, 47%, 96%) !important;
   color: hsl(228deg, 12%, 44%) !important;
 }
 

@@ -1,0 +1,29 @@
+.ovcard {
+  padding: 30px 20px;
+  border-radius: 0.5em;
+  background-color: $dark-card-bg;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: $dark-desaturated;
+  }
+
+  &__numbers {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4em;
+    img {
+      margin-right: 4px;
+    }
+    p {
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      font-size: 0.5em;
+    }
+  }
+}

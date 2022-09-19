@@ -1,0 +1,27 @@
+// white theme switch
+
+.toggle {
+  right: 2px;
+  background-color: white !important;
+}
+
+.bg-white {
+  background-color: $white-bg;
+}
+
+.card-bg-white {
+  background-color: $white-card-bg !important;
+  color: $white-text !important;
+}
+
+.black-text {
+  color: black !important;
+}
+
+.desaturated-text {
+  color: $white-text;
+}
+
+.mode-light {
+  background-color: $white-text;
+}

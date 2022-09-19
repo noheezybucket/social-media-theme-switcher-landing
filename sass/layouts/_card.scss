@@ -1,0 +1,49 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  border-radius: 0.5em;
+  background-color: $dark-card-bg;
+  color: $dark-desaturated;
+
+  @include border-top($sm-links);
+  &__name {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 0.7em;
+    img {
+      margin-right: 4px;
+    }
+  }
+
+  &__followers {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 5px 0 15px 0;
+    span {
+      font-weight: 700;
+      display: block;
+      font-size: 3em;
+      color: white;
+    }
+    bold {
+      font-weight: normal;
+      letter-spacing: 0.2em;
+      font-size: 0.9em;
+    }
+  }
+
+  &__stats {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 0.7em;
+
+    img {
+      margin-right: 4px;
+    }
+  }
+}

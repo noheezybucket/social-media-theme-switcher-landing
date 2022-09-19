@@ -1,0 +1,11 @@
+.titles {
+  &__main {
+    font-size: 1.5em;
+  }
+
+  &__followers {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: $dark-desaturated;
+  }
+}

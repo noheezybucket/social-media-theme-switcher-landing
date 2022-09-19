@@ -11,7 +11,7 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-
+    <script defer src="index.js"></script>
     <title>Social Media Dashboard</title>
   </head>
   <body>
@@ -25,62 +25,73 @@
 
           <div class="mode">
             <div class="mode__name">Dark Mode</div>
-            <div class="mode__btn"></div>
+            <div class="mode__btn"><span></span></div>
           </div>
         </section>
 
         <section class="header__grid">
-          <div class="card">
+          <div class="card card--facebook">
             <div class="card__name">
-              <img src="./images/icon-facebook.svg" alt="facebook" /><span
-                >@nathanf</span
-              >
+              <img src="./images/icon-facebook.svg" alt="facebook" />
+              <span>@mouhamadg</span>
             </div>
-            <div class="card__followers"><span>1987</span>Followers</div>
+            <div class="card__followers">
+              <span>1987</span><bold>Followers</bold>
+            </div>
             <div class="card__stats">
               <img src="./images/icon-up.svg" alt="arrow up" /><span
+                class="green"
                 >12 Today</span
               >
             </div>
           </div>
 
-          <div class="card">
+          <div class="card card--twitter">
             <div class="card__name">
               <img src="./images/icon-twitter.svg" alt="facebook" /><span
-                >@nathanf</span
+                >@mouhamadg</span
               >
             </div>
-            <div class="card__followers"><span>1044</span>Followers</div>
+            <div class="card__followers">
+              <span>1044</span><bold>Followers</bold>
+            </div>
             <div class="card__stats">
               <img src="./images/icon-up.svg" alt="arrow up" /><span
+                class="green"
                 >99 Today</span
               >
             </div>
           </div>
 
-          <div class="card">
+          <div class="card card--instagram">
             <div class="card__name">
               <img src="./images/icon-instagram.svg" alt="facebook" /><span
-                >@realnathanf</span
+                >@realmouhamadg</span
               >
             </div>
-            <div class="card__followers"><span>11k</span>Followers</div>
+            <div class="card__followers">
+              <span>11k</span><bold>Followers</bold>
+            </div>
             <div class="card__stats">
               <img src="./images/icon-up.svg" alt="arrow up" /><span
+                class="green"
                 >1099 Today</span
               >
             </div>
           </div>
 
-          <div class="card">
+          <div class="card card--youtube">
             <div class="card__name">
               <img src="./images/icon-youtube.svg" alt="facebook" /><span>
-                Nathan F.</span
+                mouhamad G.</span
               >
             </div>
-            <div class="card__followers"><span>8239</span>Subscribers</div>
+            <div class="card__followers">
+              <span>8239</span><bold>Subscribers</bold>
+            </div>
             <div class="card__stats">
               <img src="./images/icon-down.svg" alt="down arrow" /><span
+                class="red"
                 >144 Today</span
               >
             </div>
@@ -89,7 +100,7 @@
       </div>
 
       <div class="overview">
-        <div class="overview__title">Overview - Today</div>
+        <h2 class="overview__title">Overview - Today</h2>
 
         <section class="overview__grid">
           <div class="ovcard">
@@ -99,7 +110,12 @@
             </div>
             <div class="ovcard__numbers">
               <h3>87</h3>
-              <p><img src="./images/icon-up.svg" alt="arrow up" />3%</p>
+              <p>
+                <img src="./images/icon-up.svg" alt="arrow up" /><span
+                  class="green"
+                  >3%</span
+                >
+              </p>
             </div>
           </div>
 
@@ -110,7 +126,12 @@
             </div>
             <div class="ovcard__numbers">
               <h3>52</h3>
-              <p><img src="./images/icon-down.svg" alt="arrow down" />2%</p>
+              <p>
+                <img src="./images/icon-down.svg" alt="arrow down" /><span
+                  class="red"
+                  >2%</span
+                >
+              </p>
             </div>
           </div>
 
@@ -121,7 +142,12 @@
             </div>
             <div class="ovcard__numbers">
               <h3>5462</h3>
-              <p><img src="./images/icon-up.svg" alt="arrow up" />2257%</p>
+              <p>
+                <img src="./images/icon-up.svg" alt="arrow up" /><span
+                  class="green"
+                  >2257%</span
+                >
+              </p>
             </div>
           </div>
 
@@ -132,7 +158,12 @@
             </div>
             <div class="ovcard__numbers">
               <h3>52k</h3>
-              <p><img src="./images/icon-up.svg" alt="arrow up" />1375%</p>
+              <p>
+                <img src="./images/icon-up.svg" alt="arrow up" /><span
+                  class="green"
+                  >1375%</span
+                >
+              </p>
             </div>
           </div>
 
@@ -143,7 +174,12 @@
             </div>
             <div class="ovcard__numbers">
               <h3>117</h3>
-              <p><img src="./images/icon-up.svg" alt="arrow up" />303%</p>
+              <p>
+                <img src="./images/icon-up.svg" alt="arrow up" /><span
+                  class="green"
+                  >303%</span
+                >
+              </p>
             </div>
           </div>
 
@@ -154,7 +190,12 @@
             </div>
             <div class="ovcard__numbers">
               <h3>507</h3>
-              <p><img src="./images/icon-up.svg" alt="arrow up" />553%</p>
+              <p>
+                <img src="./images/icon-up.svg" alt="arrow up" /><span
+                  class="green"
+                  >553%</span
+                >
+              </p>
             </div>
           </div>
 
@@ -165,7 +206,12 @@
             </div>
             <div class="ovcard__numbers">
               <h3>107</h3>
-              <p><img src="./images/icon-down.svg" alt="arrow down" />10%</p>
+              <p>
+                <img src="./images/icon-down.svg" alt="arrow down" /><span
+                  class="red"
+                  >10%</span
+                >
+              </p>
             </div>
           </div>
 
@@ -176,7 +222,12 @@
             </div>
             <div class="ovcard__numbers">
               <h3>1407</h3>
-              <p><img src="./images/icon-down.svg" alt="arrow down" />12%</p>
+              <p>
+                <img src="./images/icon-down.svg" alt="arrow down" /><span
+                  class="red"
+                  >12%</span
+                >
+              </p>
             </div>
           </div>
         </section>

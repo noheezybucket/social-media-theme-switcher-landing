@@ -7,7 +7,7 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Inter;
-  transition: 1s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 // primary colors
@@ -25,7 +25,8 @@ $toggle-light: hsl(230, 22%, 74%);
 // dark theme colors
 $dark-bg: hsl(230, 17%, 14%);
 $dark-top-pattern-bg: hsl(232, 19%, 15%);
-$dark-card-bg: hsl(228, 34%, 66%);
+$dark-card-bg: hsl(228, 28%, 20%);
+$dark-desaturated: hsl(228, 34%, 66%);
 $dark-text: hsl(0, 0%, 100%);
 
 // white theme colors
@@ -41,16 +42,15 @@ $margin-auto: 0 auto;
 @mixin border-top($list) {
   @each $sm, $val in $list {
     &--#{$sm} {
-      border-top: 3px solid $val;
+      border-top: 5px solid $val;
     }
   }
 }
 
 body {
   padding: 50px 0;
-  @media screen and (max-width: 554px) {
-    padding: 50px 0;
-  }
+  background-color: $dark-bg;
+  color: $dark-text;
 }
 
 main {
@@ -63,7 +63,6 @@ main {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: $border;
     margin-bottom: 20px;
 
     @media screen and (max-width: 554px) {
@@ -75,7 +74,6 @@ main {
   &__grid {
     display: grid;
     grid-template-areas: "1 2 3 4";
-    // border: $border;
     gap: 30px;
     @media screen and (max-width: 927px) {
       grid-template-areas: "1 2" "3 4";
@@ -95,6 +93,7 @@ main {
   &__followers {
     font-size: 0.9em;
     font-weight: 600;
+    color: $dark-desaturated;
   }
 }
 
@@ -106,13 +105,15 @@ $sm-links: (
 );
 
 .card {
-  border: $border;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px 0;
   border-radius: 0.5em;
+  background-color: $dark-card-bg;
+  color: $dark-desaturated;
+
   @include border-top($sm-links);
   &__name {
     display: flex;
@@ -132,6 +133,7 @@ $sm-links: (
       font-weight: 700;
       display: block;
       font-size: 3em;
+      color: white;
     }
     bold {
       font-weight: normal;
@@ -164,6 +166,8 @@ $sm-links: (
   display: flex;
   align-items: center;
   font-weight: 600;
+  color: $dark-desaturated;
+
   @media screen and (max-width: 554px) {
     display: flex;
     justify-content: space-between;
@@ -171,7 +175,6 @@ $sm-links: (
     margin-top: 10px;
   }
   &__btn {
-    border: $border;
     width: 50px;
     height: 25px;
     margin-left: 10px;
@@ -179,17 +182,17 @@ $sm-links: (
     position: relative;
     padding: 5px 2px;
     cursor: pointer;
+    border: 1px solid $dark-desaturated;
 
     span {
       position: absolute;
       height: 20px;
       width: 20px;
       top: 50%;
-      transition: 0.3s ease-in-out;
+      transition: 1s ease-in-out;
       transform: translateY(-50%);
       border-radius: 100%;
-      border: $border;
-      background-color: black;
+      background-color: $dark-desaturated;
     }
   }
 }
@@ -198,7 +201,6 @@ $sm-links: (
   margin-top: 20px;
 
   &__title {
-    border: $border;
     font-weight: 700;
     font-size: 1.3em;
     margin-bottom: 20px;
@@ -220,9 +222,9 @@ $sm-links: (
 }
 
 .ovcard {
-  border: $border;
   padding: 30px 20px;
   border-radius: 0.5em;
+  background-color: $dark-card-bg;
 
   &__title {
     display: flex;
@@ -230,6 +232,7 @@ $sm-links: (
     margin-bottom: 30px;
     font-size: 0.9em;
     font-weight: 600;
+    color: $dark-desaturated;
   }
 
   &__numbers {
@@ -243,13 +246,35 @@ $sm-links: (
       display: flex;
       align-items: center;
       font-weight: 600;
-      font-size: 0.7em;
+      font-size: 0.5em;
     }
   }
 }
 
-// toggle btn
+// white theme switch
 
 .toggle {
-  left: 0;
+  right: 2px;
+  background-color: white !important;
+}
+
+.bg-white {
+  background-color: $white-bg;
+}
+
+.card-bg-white {
+  background-color: $white-card-bg;
+  color: $white-text !important;
+}
+
+.black-text {
+  color: black !important;
+}
+
+.desaturated-text {
+  color: $white-text;
+}
+
+.mode-light {
+  background-color: $white-text;
 }

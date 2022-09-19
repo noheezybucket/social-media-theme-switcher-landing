@@ -6,16 +6,13 @@
   margin: 0;
   box-sizing: border-box;
   font-family: Inter;
-  transition: 1s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 body {
   padding: 50px 0;
-}
-@media screen and (max-width: 554px) {
-  body {
-    padding: 50px 0;
-  }
+  background-color: hsl(230deg, 17%, 14%);
+  color: hsl(0deg, 0%, 100%);
 }
 
 main {
@@ -27,7 +24,6 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid black;
   margin-bottom: 20px;
 }
 @media screen and (max-width: 554px) {
@@ -58,28 +54,30 @@ main {
 .titles__followers {
   font-size: 0.9em;
   font-weight: 600;
+  color: hsl(228deg, 34%, 66%);
 }
 
 .card {
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px 0;
   border-radius: 0.5em;
+  background-color: hsl(228deg, 28%, 20%);
+  color: hsl(228deg, 34%, 66%);
 }
 .card--facebook {
-  border-top: 3px solid hsl(208deg, 92%, 53%);
+  border-top: 5px solid hsl(208deg, 92%, 53%);
 }
 .card--twitter {
-  border-top: 3px solid hsl(203deg, 89%, 53%);
+  border-top: 5px solid hsl(203deg, 89%, 53%);
 }
 .card--instagram {
-  border-top: 3px solid hsl(37deg, 97%, 70%);
+  border-top: 5px solid hsl(37deg, 97%, 70%);
 }
 .card--youtube {
-  border-top: 3px solid hsl(348deg, 97%, 39%);
+  border-top: 5px solid hsl(348deg, 97%, 39%);
 }
 .card__name {
   display: flex;
@@ -99,6 +97,7 @@ main {
   font-weight: 700;
   display: block;
   font-size: 3em;
+  color: white;
 }
 .card__followers bold {
   font-weight: normal;
@@ -127,6 +126,7 @@ main {
   display: flex;
   align-items: center;
   font-weight: 600;
+  color: hsl(228deg, 34%, 66%);
 }
 @media screen and (max-width: 554px) {
   .mode {
@@ -137,7 +137,6 @@ main {
   }
 }
 .mode__btn {
-  border: 1px solid black;
   width: 50px;
   height: 25px;
   margin-left: 10px;
@@ -145,24 +144,23 @@ main {
   position: relative;
   padding: 5px 2px;
   cursor: pointer;
+  border: 1px solid hsl(228deg, 34%, 66%);
 }
 .mode__btn span {
   position: absolute;
   height: 20px;
   width: 20px;
   top: 50%;
-  transition: 0.3s ease-in-out;
+  transition: 1s ease-in-out;
   transform: translateY(-50%);
   border-radius: 100%;
-  border: 1px solid black;
-  background-color: black;
+  background-color: hsl(228deg, 34%, 66%);
 }
 
 .overview {
   margin-top: 20px;
 }
 .overview__title {
-  border: 1px solid black;
   font-weight: 700;
   font-size: 1.3em;
   margin-bottom: 20px;
@@ -184,9 +182,9 @@ main {
 }
 
 .ovcard {
-  border: 1px solid black;
   padding: 30px 20px;
   border-radius: 0.5em;
+  background-color: hsl(228deg, 28%, 20%);
 }
 .ovcard__title {
   display: flex;
@@ -194,6 +192,7 @@ main {
   margin-bottom: 30px;
   font-size: 0.9em;
   font-weight: 600;
+  color: hsl(228deg, 34%, 66%);
 }
 .ovcard__numbers {
   display: flex;
@@ -207,11 +206,33 @@ main {
   display: flex;
   align-items: center;
   font-weight: 600;
-  font-size: 0.7em;
+  font-size: 0.5em;
 }
 
 .toggle {
-  left: 0;
+  right: 2px;
+  background-color: white !important;
+}
+
+.bg-white {
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+.card-bg-white {
+  background-color: hsl(227deg, 47%, 96%);
+  color: hsl(228deg, 12%, 44%) !important;
+}
+
+.black-text {
+  color: black !important;
+}
+
+.desaturated-text {
+  color: hsl(228deg, 12%, 44%);
+}
+
+.mode-light {
+  background-color: hsl(228deg, 12%, 44%);
 }
 
 /*# sourceMappingURL=style.css.map */

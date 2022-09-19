@@ -1,87 +1,186 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./public/css/style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
+    <title>Social Media Dashboard</title>
+  </head>
+  <body>
+    <main>
+      <div class="header">
+        <section class="header__first">
+          <div class="titles">
+            <h1 class="titles__main">Social Media Dashboard</h1>
+            <h2 class="titles__followers">Total Followers: 23,004</h2>
+          </div>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+          <div class="mode">
+            <div class="mode__name">Dark Mode</div>
+            <div class="mode__btn"></div>
+          </div>
+        </section>
 
-  Social Media Dashboard
-  Total Followers: 23,004
+        <section class="header__grid">
+          <div class="card">
+            <div class="card__name">
+              <img src="./images/icon-facebook.svg" alt="facebook" /><span
+                >@nathanf</span
+              >
+            </div>
+            <div class="card__followers"><span>1987</span>Followers</div>
+            <div class="card__stats">
+              <img src="./images/icon-up.svg" alt="arrow up" /><span
+                >12 Today</span
+              >
+            </div>
+          </div>
 
-  Dark Mode
+          <div class="card">
+            <div class="card__name">
+              <img src="./images/icon-twitter.svg" alt="facebook" /><span
+                >@nathanf</span
+              >
+            </div>
+            <div class="card__followers"><span>1044</span>Followers</div>
+            <div class="card__stats">
+              <img src="./images/icon-up.svg" alt="arrow up" /><span
+                >99 Today</span
+              >
+            </div>
+          </div>
 
-  
+          <div class="card">
+            <div class="card__name">
+              <img src="./images/icon-instagram.svg" alt="facebook" /><span
+                >@realnathanf</span
+              >
+            </div>
+            <div class="card__followers"><span>11k</span>Followers</div>
+            <div class="card__stats">
+              <img src="./images/icon-up.svg" alt="arrow up" /><span
+                >1099 Today</span
+              >
+            </div>
+          </div>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+          <div class="card">
+            <div class="card__name">
+              <img src="./images/icon-youtube.svg" alt="facebook" /><span>
+                Nathan F.</span
+              >
+            </div>
+            <div class="card__followers"><span>8239</span>Subscribers</div>
+            <div class="card__stats">
+              <img src="./images/icon-down.svg" alt="down arrow" /><span
+                >144 Today</span
+              >
+            </div>
+          </div>
+        </section>
+      </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+      <div class="overview">
+        <div class="overview__title">Overview - Today</div>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+        <section class="overview__grid">
+          <div class="ovcard">
+            <div class="ovcard__title">
+              <p>Page Views</p>
+              <img src="./images/icon-facebook.svg" alt="facebook" />
+            </div>
+            <div class="ovcard__numbers">
+              <h3>87</h3>
+              <p><img src="./images/icon-up.svg" alt="arrow up" />3%</p>
+            </div>
+          </div>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+          <div class="ovcard">
+            <div class="ovcard__title">
+              <p>Likes</p>
+              <img src="./images/icon-facebook.svg" alt="facebook" />
+            </div>
+            <div class="ovcard__numbers">
+              <h3>52</h3>
+              <p><img src="./images/icon-down.svg" alt="arrow down" />2%</p>
+            </div>
+          </div>
 
+          <div class="ovcard">
+            <div class="ovcard__title">
+              <p>Likes</p>
+              <img src="./images/icon-instagram.svg" alt="instagram" />
+            </div>
+            <div class="ovcard__numbers">
+              <h3>5462</h3>
+              <p><img src="./images/icon-up.svg" alt="arrow up" />2257%</p>
+            </div>
+          </div>
 
+          <div class="ovcard">
+            <div class="ovcard__title">
+              <p>Profile Views</p>
+              <img src="./images/icon-instagram.svg" alt="instagram" />
+            </div>
+            <div class="ovcard__numbers">
+              <h3>52k</h3>
+              <p><img src="./images/icon-up.svg" alt="arrow up" />1375%</p>
+            </div>
+          </div>
 
-  Overview - Today
+          <div class="ovcard">
+            <div class="ovcard__title">
+              <p>Retweets</p>
+              <img src="./images/icon-twitter.svg" alt="twitter" />
+            </div>
+            <div class="ovcard__numbers">
+              <h3>117</h3>
+              <p><img src="./images/icon-up.svg" alt="arrow up" />303%</p>
+            </div>
+          </div>
 
-  Page Views
-  87
-  3%
+          <div class="ovcard">
+            <div class="ovcard__title">
+              <p>Likes</p>
+              <img src="./images/icon-twitter.svg" alt="twitter" />
+            </div>
+            <div class="ovcard__numbers">
+              <h3>507</h3>
+              <p><img src="./images/icon-up.svg" alt="arrow up" />553%</p>
+            </div>
+          </div>
 
-  Likes
-  52
-  2%
+          <div class="ovcard">
+            <div class="ovcard__title">
+              <p>Likes</p>
+              <img src="./images/icon-youtube.svg" alt="youtube" />
+            </div>
+            <div class="ovcard__numbers">
+              <h3>107</h3>
+              <p><img src="./images/icon-down.svg" alt="arrow down" />10%</p>
+            </div>
+          </div>
 
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+          <div class="ovcard">
+            <div class="ovcard__title">
+              <p>Total Views</p>
+              <img src="./images/icon-youtube.svg" alt="youtube" />
+            </div>
+            <div class="ovcard__numbers">
+              <h3>1407</h3>
+              <p><img src="./images/icon-down.svg" alt="arrow down" />12%</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>
